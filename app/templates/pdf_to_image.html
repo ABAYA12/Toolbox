@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Convert PDF to Images</h2>
+<form action="{{ url_for('main.pdf_to_image_view') }}" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="pdf">Select PDF:</label>
+        <input type="file" class="form-control-file" id="pdf" name="pdf" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Convert</button>
+</form>
+{% endblock %}

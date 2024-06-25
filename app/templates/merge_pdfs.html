@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Merge PDFs</h2>
+<form action="{{ url_for('main.merge_pdfs_view') }}" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="pdfs">Select PDFs:</label>
+        <input type="file" class="form-control-file" id="pdfs" name="pdfs" multiple required>
+    </div>
+    <button type="submit" class="btn btn-primary">Merge</button>
+</form>
+{% endblock %}

@@ -1,0 +1,6 @@
+Flask
+PyPDF2
+Pillow
+opencv-python
+pdf2image
+gunicorn
